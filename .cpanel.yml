@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home6/turkanap/Turkana-Prep-School
+    - /bin/cp -R * $DEPLOYPATH

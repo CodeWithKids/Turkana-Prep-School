@@ -1,11 +1,19 @@
-  =>  Template Name    : KidKinder - Kindergarten Website Template
+  # Turkana Preparatory School Website
 
-  =>  Template Link    : https://htmlcodex.com/kindergarten-website-template
+This project is the official website for Turkana Preparatory School, customized from the KidKinder template.
 
-  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+## Setup
 
-  =>  Template Author  : HTML Codex
+1.  **Add the Logo:** Place the school's logo file, named `logo.png`, into the `img/` folder.
+2.  **View the Website:** Open any of the `.html` files (e.g., `index.html`) in a web browser to see the site.
 
-  =>  Author Website   : https://htmlcodex.com
+## Customization
 
-  =>  About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
+-   **Branding:** The school name and logo are set in the navigation bar of each `.html` file.
+-   **Colors:** The theme colors (dark green `#2c5234` and light cream `#f5f5dc`) are defined in a `<style>` tag in the `<head>` of each HTML file. You can change them there.
+-   **Content:** All text and images can be replaced by editing the HTML files and replacing files in the `img/` folder.
+
+## Credits
+
+-   **Original Template:** KidKinder by HTML Codex (https://htmlcodex.com)
+-   **Customization:** Renice Owino
