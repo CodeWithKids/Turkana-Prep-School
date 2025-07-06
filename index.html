@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>KidKinder - Kindergarten Website Template</title>
+    <title>Turkana Preparatory school</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -14,9 +14,9 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Web Fonts - Open Sans -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -36,29 +36,49 @@
     
     <!-- Responsive Styles -->
     <link href="css/responsive.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-            <a href="index.html" class="navbar-brand font-weight-bold" style="font-size: 50px;" style="font-size: 50px;">
-                <i class="flaticon-043-teddy-bear text-gold"></i>
-                <span class="text-white">Turkana Prep</span>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="class.html" class="nav-item nav-link">Classes</a>
-                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <a href="events.html" class="nav-item nav-link">Events</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+            <div class="container px-4 px-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.jpeg" alt="Turkana Preparatory School Logo" class="img-fluid" style="max-height: 50px; margin-right: 10px;">
+                    <span class="text-dark d-none d-md-block" style="font-size: 1.8rem; font-weight: 700;">Turkana Preparatory School</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="class.html">Classes</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn btn-primary px-4">Join Class</a>
+                    </div>
                 </div>
-                <a href="contact.html" class="btn btn-primary px-4">Join Class</a>
             </div>
         </nav>
     </div>
@@ -73,230 +93,384 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center px-4">
-                            <h1 class="display-4 font-weight-bold mb-4 text-white">Welcome to <span class="text-cream">Turkana Prep</span></h1>
-                            <p class="lead text-white mb-5">Nurturing young minds through innovative education and character development in a supportive community.</p>
+                            <h1 class="display-3 font-weight-bold mb-4 text-white">Welcome to <span class="text-warning">Turkana Preparatory</span></h1>
+                            <p class="lead text-white mb-5">Inspiring excellence in education since 2008.</p>
                             <div class="hero-buttons">
-                                <a href="about.html" class="btn btn-primary btn-lg px-4 py-3 mr-3 mb-3">Explore Our School</a>
-                                <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3 mb-3">Schedule a Visit</a>
+                                <a href="about.html" class="btn btn-primary btn-lg px-4 py-3 mr-3 mb-3">
+                                    <i class="fas fa-school mr-2"></i>Explore Our School
+                                </a>
+                                <a href="contact.html" class="btn btn-outline-light btn-lg px-4 py-3 mb-3">
+                                    <i class="far fa-calendar-alt mr-2"></i>Schedule a Visit
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- CBC Curriculum Slide -->
-            <div class="hero-slide d-flex align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/5five.jpg');">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 text-center px-4">
-                            <span class="badge badge-light text-dark mb-3 px-3 py-2">Our Approach</span>
-                            <h2 class="display-5 font-weight-bold mb-4 text-white">Competency-Based <span class="text-cream">Curriculum</span></h2>
-                            <p class="text-white mb-5">Empowering students with practical skills and knowledge through Kenya's CBC curriculum, tailored for success in the 21st century.</p>
-                            <a href="class.html" class="btn btn-primary btn-lg px-4 py-3">Learn About Our Programs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Community Values Slide -->
+            <!-- Academic Excellence Slide -->
             <div class="hero-slide d-flex align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/2two.jpg');">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center px-4">
-                            <span class="badge badge-light text-dark mb-3 px-3 py-2">Our Values</span>
-                            <h2 class="display-5 font-weight-bold mb-4 text-white">Building <span class="text-cream">Character</span> & <span class="text-cream">Community</span></h2>
-                            <p class="text-white mb-5">Fostering respect, integrity, and social responsibility in a nurturing learning environment.</p>
-                            <a href="about.html#values" class="btn btn-primary btn-lg px-4 py-3">Our Core Values</a>
+                            <h1 class="display-3 font-weight-bold mb-4 text-white">Academic <span class="text-warning">Excellence</span></h1>
+                            <p class="lead text-white mb-5">Nurturing young minds through innovative learning experiences.</p>
+                            <div class="hero-buttons">
+                                <a href="class.html" class="btn btn-primary btn-lg px-4 py-3 mr-3 mb-3">
+                                    <i class="fas fa-graduation-cap mr-2"></i>Our Programs
+                                </a>
+                                <a href="events.html" class="btn btn-outline-light btn-lg px-4 py-3 mb-3">
+                                    <i class="far fa-calendar-check mr-2"></i>Upcoming Events
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Carousel Navigation -->
-        <div class="carousel-controls">
-            <div class="carousel-nav-prev"><i class="fas fa-chevron-left"></i></div>
-            <div class="carousel-nav-next"><i class="fas fa-chevron-right"></i></div>
-        </div>
-        
-        <!-- Scroll Down Indicator -->
-        <div class="scroll-down">
-            <span>Scroll to Explore</span>
-            <i class="fas fa-chevron-down"></i>
+            
+            <!-- Community Slide -->
+            <div class="hero-slide d-flex align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('img/3three.jpg');">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center px-4">
+                            <h1 class="display-3 font-weight-bold mb-4 text-white">Join Our <span class="text-warning">Community</span></h1>
+                            <p class="lead text-white mb-5">Where every child is valued and inspired to reach their full potential.</p>
+                            <div class="hero-buttons">
+                                <a href="contact.html#enroll" class="btn btn-primary btn-lg px-4 py-3 mr-3 mb-3">
+                                    <i class="fas fa-user-plus mr-2"></i>Enroll Now
+                                </a>
+                                <a href="gallery.html" class="btn btn-outline-light btn-lg px-4 py-3 mb-3">
+                                    <i class="fas fa-images mr-2"></i>View Gallery
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- End Hero Section -->
     
-    <!-- About Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="section-title">Welcome to <span>Turkana Preparatory School</span></h2>
-                    <p class="lead">Established in 2024, we are committed to providing quality education that nurtures young minds for a brighter future.</p>
-                    <p>Our dedicated team of educators creates a stimulating learning environment that encourages curiosity, creativity, and a lifelong love for learning.</p>
-                    <a href="about.html" class="btn btn-primary mt-3">Learn More</a>
-                </div>
-                <div class="col-lg-6">
-                    <img src="img/4four.jpg" alt="About Us" class="img-fluid rounded shadow">
-                </div>
+    <!-- About Our School Section -->
+    <section id="about" class="py-6 bg-light position-relative">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge badge-primary badge-pill px-4 py-2 mb-3">About Us</span>
+                <h2 class="h1 font-weight-bold mb-3">Nurturing <span class="text-primary">Young Minds</span> Since 2024</h2>
+                <div class="divider mx-auto bg-primary mb-4"></div>
+                <p class="lead text-muted max-w-800 mx-auto">At Turkana Preparatory, we believe in providing a nurturing environment where every child can discover their unique potential and develop a lifelong love for learning.</p>
             </div>
-        </div>
-    </section>
-
-
-    <!-- Facilities Start -->
-    <div class="container-fluid pt-5">
-        <div class="container pb-3">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>Play Ground</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                        <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>Music and Dance</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                        <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>Arts and Crafts</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                        <i class="flaticon-017-toy-car h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>Safe Transportation</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                        <i class="flaticon-025-sandwich h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>Healthy food</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pb-1">
-                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
-                        <i class="flaticon-047-backpack h1 font-weight-normal text-primary mb-3"></i>
-                        <div class="pl-4">
-                            <h4>Educational Tour</h4>
-                            <p class="m-0">Kasd labore kasd et dolor est rebum dolor ut, clita dolor vero lorem amet elitr vero...</p>
-                        </div>
-                    </div>
-                    <div class="position-relative">
-                        <img src="img/about-1.jpg" alt="Happy children learning" class="img-fluid rounded-lg shadow-lg w-100">
-                        <div class="position-absolute d-none d-md-block" style="top: -20px; right: -20px; z-index: 1;">
-                            <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 70px; height: 70px;">
-                                <i class="fas fa-award fa-2x"></i>
-                            </div>
-                        </div>
-                        <div class="position-absolute d-none d-md-block" style="bottom: -25px; left: -25px; z-index: 1;">
-                            <div class="bg-primary text-white text-center p-2 p-md-3 rounded-lg shadow" style="max-width: 160px;">
-                                <h4 class="h3 mb-0">15+</h4>
-                                <p class="mb-0 small">Years of Excellence</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pl-lg-5 order-lg-0">
-                    <span class="badge badge-primary badge-pill px-3 px-md-4 py-2 mb-3">About Our School</span>
-                    <h2 class="h1 font-weight-bold mb-3 mb-lg-4">Providing Quality <span class="text-primary">Education</span> Since 2008</h2>
-                    <p class="lead mb-4">At Turkana Preparatory School, we are committed to nurturing young minds through a balanced approach to education that combines academic excellence with character development.</p>
-                    
-                    <div class="row mb-4">
-                        <div class="col-md-6 mb-4">
-                            <div class="d-flex">
-                                <div class="mr-3 mr-md-4 text-primary">
-                                    <i class="fas fa-check-circle fa-lg mt-1"></i>
-                                </div>
-                                <div>
-                                    <h4 class="h5 mb-2">Qualified Teachers</h4>
-                                    <p class="mb-0 text-muted small">Our dedicated team of certified educators are passionate about early childhood development.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="d-flex">
-                                <div class="mr-3 mr-md-4 text-primary">
-                                    <i class="fas fa-check-circle fa-lg mt-1"></i>
-                                </div>
-                                <div>
-                                    <h4 class="h5 mb-2">Safe Environment</h4>
-                                    <p class="mb-0 text-muted small">We maintain the highest standards of safety and security for all our students.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4 mb-md-0">
-                            <div class="d-flex">
-                                <div class="mr-3 mr-md-4 text-primary">
-                                    <i class="fas fa-check-circle fa-lg mt-1"></i>
-                                </div>
-                                <div>
-                                    <h4 class="h5 mb-2">Modern Facilities</h4>
-                                    <p class="mb-0 text-muted small">State-of-the-art classrooms and learning spaces designed for young learners.</p>
-                                </div>
+            
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="feature-card bg-white p-4 rounded-lg shadow-sm h-100 text-center">
+                                <h4 class="h5 mb-2">Qualified Teachers</h4>
+                                <p class="text-muted small mb-0">Our passionate educators are dedicated to your child's academic and personal success.</p>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="d-flex">
-                                <div class="mr-3 mr-md-4 text-primary">
-                                    <i class="fas fa-check-circle fa-lg mt-1"></i>
-                                </div>
-                                <div>
-                                    <h4 class="h5 mb-2">Holistic Approach</h4>
-                                    <p class="mb-0 text-muted small">We focus on the intellectual, social, emotional, and physical development of each child.</p>
-                                </div>
+                            <div class="feature-card bg-white p-4 rounded-lg shadow-sm h-100 text-center">
+                                <h4 class="h5 mb-2">Safe Environment</h4>
+                                <p class="text-muted small mb-0">Secure and nurturing spaces designed for optimal learning and growth.</p>
                             </div>
                         </div>
+
                     </div>
-                    
-                    <a href="about.html" class="btn btn-primary btn-lg px-4">Learn More About Us</a>
-                    
-                    <!-- Mobile Badges -->
-                    <div class="d-flex d-md-none justify-content-between mt-4 pt-3">
-                        <div class="bg-warning text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                            <i class="fas fa-award fa-lg"></i>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <div class="feature-card bg-white p-4 rounded-lg shadow-sm h-100 text-center">
+                                <h4 class="h5 mb-2">Modern Facilities</h4>
+                                <p class="text-muted small mb-0">State-of-the-art learning environments that inspire young minds.</p>
+                            </div>
                         </div>
-                        <div class="bg-primary text-white text-center p-2 rounded-lg shadow ms-3" style="max-width: 140px;">
-                            <h4 class="h4 mb-0">15+</h4>
-                            <p class="mb-0 small">Years of Excellence</p>
+                        <div class="col-md-6">
+                            <div class="feature-card bg-white p-4 rounded-lg shadow-sm h-100 text-center">
+                                <h4 class="h5 mb-2">Holistic Approach</h4>
+                                <p class="text-muted small mb-0">Nurturing mind, body, and character for balanced development.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            
+            <div class="text-center mt-5 pt-3">
+                <a href="about.html" class="btn btn-primary btn-lg px-5 py-3">
+                    <i class="fas fa-arrow-right mr-2"></i>Discover More About Us
+                </a>
+            </div>
         <div class="shape shape-bottom shape-fluid-x text-dark d-none d-md-block">
             <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                 <path d="M0,48L80,42.7C160,37,320,27,480,32C640,37,800,59,960,69.3C1120,80,1280,80,1360,80L1440,80L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" fill="currentColor"></path>
             </svg>
         </div>
     </section>
-    <!-- End About Section -->
+    <!-- End About Our School Section -->
 
 
-
-    <!-- Registration Section Removed -->
+    <!-- Facilities Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge badge-primary badge-pill px-4 py-2 mb-3">Our Facilities</span>
+                <h2 class="h1 font-weight-bold mb-3">Inspiring <span class="text-primary">Learning Spaces</span></h2>
+                <p class="lead text-muted">Designed to spark curiosity and foster growth</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Play Area -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="facility-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/playground.jpg" alt="Play Area" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                            <div class="facility-overlay">
+                                <i class="fas fa-child fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="h5 mb-3">Play Areas</h4>
+                            <p class="text-muted mb-0">Safe, engaging spaces for physical and social development</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Creative Studio -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="facility-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/art-room.jpg" alt="Creative Studio" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                            <div class="facility-overlay">
+                                <i class="fas fa-paint-brush fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="h5 mb-3">Creative Studio</h4>
+                            <p class="text-muted mb-0">Spaces that inspire imagination and artistic expression</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tech Lab -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="facility-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/computer-lab.jpg" alt="Tech Lab" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                            <div class="facility-overlay">
+                                <i class="fas fa-laptop-code fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="h5 mb-3">Tech Lab</h4>
+                            <p class="text-muted mb-0">Modern technology for 21st century learning</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dining Hall -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="facility-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/dining.jpg" alt="Dining Hall" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                            <div class="facility-overlay">
+                                <i class="fas fa-utensils fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="h5 mb-3">Dining Hall</h4>
+                            <p class="text-muted mb-0">Nutritious meals in a welcoming environment</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Library -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="facility-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/library.jpg" alt="Library" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                            <div class="facility-overlay">
+                                <i class="fas fa-book fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="h5 mb-3">Library</h4>
+                            <p class="text-muted mb-0">A world of stories and knowledge to explore</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Music Room -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="facility-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/music-room.jpg" alt="Music Room" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                            <div class="facility-overlay">
+                                <i class="fas fa-music fa-3x text-white"></i>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="h5 mb-3">Music Room</h4>
+                            <p class="text-muted mb-0">Where creativity meets rhythm and melody</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="gallery.html" class="btn btn-outline-primary btn-lg px-5">View More Facilities</a>
+            </div>
+        </div>
     </section>
-    <!-- End Registration Section -->
+    <!-- Facilities End -->
+
+
+
+    <!-- Academic Programs Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge badge-primary badge-pill px-4 py-2 mb-3">Our Programs</span>
+                <h2 class="h1 font-weight-bold mb-3">Academic <span class="text-primary">Excellence</span></h2>
+                <p class="lead text-muted">Nurturing young minds through innovative learning experiences</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Early Years -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/early.jpg" alt="Early Years" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Early Years</h3>
+                            <p class="text-muted mb-4">Ages 2-4: Play-based learning for social, emotional, and cognitive development.</p>
+                            <a href="class.html#early-years" class="btn btn-outline-primary">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Primary School -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="program-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/school.jpg" alt="Primary School" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">Primary School</h3>
+                            <p class="text-muted mb-4">Ages 5-11: Comprehensive curriculum focusing on literacy, numeracy, and creative arts.</p>
+                            <a href="class.html#primary" class="btn btn-outline-primary">Explore Curriculum</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- STEM & Coding -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="program-card card border-0 shadow-sm h-100 overflow-hidden">
+                        <div class="position-relative" style="height: 200px; overflow: hidden;">
+                            <img src="img/coding.jpeg" alt="STEM & Coding" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h3 class="h4 mb-3">STEM & Coding</h3>
+                            <p class="text-muted mb-4">Hands-on learning in science, technology, engineering, and mathematics.</p>
+                            <a href="class.html#stem" class="btn btn-outline-primary">Learn About STEM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="class.html" class="btn btn-primary btn-lg px-5">View All Programs</a>
+            </div>
+        </div>
+    </section>
+    <!-- Academic Programs End -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+    <!-- Gallery Preview Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Gallery</span></p>
+                <h1 class="mb-5">Moments at Turkana Prep</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <a href="gallery.html" class="d-block h-100">
+                        <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-1.jpg" alt="Gallery Image 1" style="height: 200px; object-fit: cover;">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <a href="gallery.html" class="d-block h-100">
+                        <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-2.jpg" alt="Gallery Image 2" style="height: 200px; object-fit: cover;">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <a href="gallery.html" class="d-block h-100">
+                        <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-3.jpg" alt="Gallery Image 3" style="height: 200px; object-fit: cover;">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                    <a href="gallery.html" class="d-block h-100">
+                        <img class="img-fluid w-100 rounded shadow-sm" src="img/gallery-4.jpg" alt="Gallery Image 4" style="height: 200px; object-fit: cover;">
+                    </a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="gallery.html" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery Preview End -->
+
+    <!-- Achievements Start -->
+    <div class="container-fluid py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center pb-2">
+                <p class="section-title px-5"><span class="px-2">Our Achievements</span></p>
+                <h1 class="mb-5">Proud Moments</h1>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="counter-box p-4 rounded shadow-sm bg-white">
+                        <i class="fas fa-award fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-count="15">0</h2>
+                        <h5>Years of Excellence</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="counter-box p-4 rounded shadow-sm bg-white">
+                        <i class="fas fa-user-graduate fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-count="500">0</h2>
+                        <h5>Students Enrolled</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="counter-box p-4 rounded shadow-sm bg-white">
+                        <i class="fas fa-chalkboard-teacher fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-count="45">0</h2>
+                        <h5>Qualified Teachers</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="counter-box p-4 rounded shadow-sm bg-white">
+                        <i class="fas fa-trophy fa-3x text-primary mb-3"></i>
+                        <h2 class="counter" data-count="25">0</h2>
+                        <h5>Awards Won</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Achievements End -->
 
 
     <!-- Testimonial Start -->
@@ -367,8 +541,8 @@
 
 
     <!-- Footer Start -->
-    <footer class="bg-dark bg-teal text-white pt-4 pb-3">
-        <div class="container">
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container-fluid px-5">
             <div class="row g-4">
                 <!-- School Info -->
                 <div class="col-lg-5 col-md-6 mb-4">
@@ -451,6 +625,45 @@
     <script src="js/main.js"></script>
     <!-- Back to Top Button -->
     <script src="js/back-to-top.js"></script>
+    
+    <!-- Counter Animation -->
+    <script>
+        // Counter Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // The lower the faster
+            
+            function animateCounters() {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(animateCounters, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                });
+            }
+
+            // Start counter when element is in viewport
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            // Observe each counter
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
 </body>
 
 </html>

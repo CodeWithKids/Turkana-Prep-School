@@ -2,21 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>KidKinder - Events</title>
+    <title>Turkana Preparatory School - Events</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Turkana Preparatory School offers a nurturing and creative learning environment for young children. Discover our unique approach to early childhood education." name="description">
-    <meta content="Turkana Preparatory School, Lodwar Coding, kindergarten in Turkana, preschool, early education, child care, Lodwar, coding School, international school in turkana, STEM, Kids coding in Turkana, Turkana, preparatory school" name="keywords">
-
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Stay updated with the latest events at Turkana Preparatory School. Join us for exciting activities, workshops, and celebrations throughout the academic year." name="description">
+    <meta content="school events, Turkana Preparatory School events, academic calendar, school activities, parent-teacher meetings, school functions, educational events, school calendar" name="keywords">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Web Fonts - Open Sans -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -30,166 +28,60 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
     <!-- Theme Colors -->
     <link href="css/theme-colors.css" rel="stylesheet">
+    
+    <!-- Responsive Styles -->
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/custom-styles.css" rel="stylesheet">
     
     <!-- FullCalendar CSS -->
     <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css' rel='stylesheet' />
     
-    <!-- Custom Events Page CSS -->
-    <style>
-        /* Event Cards */
-        .event-card {
-            transition: all 0.3s ease;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-bottom: 30px;
-            border: none;
-        }
-        
-        .event-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-        }
-        
-        .event-card .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .event-date {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            color: #2c5234;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .event-date .day {
-            display: block;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1;
-        }
-        
-        .event-date .month {
-            display: block;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        /* Countdown Timer */
-        #countdown {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 15px 0;
-        }
-        
-        .countdown-number {
-            font-size: 24px;
-            font-weight: 700;
-            color: #2c5234;
-            min-width: 50px;
-        }
-        
-        .countdown-label {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #6c757d;
-        }
-        
-        /* Category Badges */
-        .badge {
-            padding: 6px 10px;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-        
-        .badge-primary { background-color: #2c5234; }
-        .badge-warning { background-color: #f5a623; color: #fff; }
-        .badge-success { background-color: #7ed321; }
-        .badge-info { background-color: #50b5ff; }
-        
-        /* Event Meta */
-        .event-meta {
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 12px;
-            margin-top: 15px;
-        }
-        
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .event-card .card-img-top {
-                height: 180px;
-            }
-            
-            .countdown-number {
-                font-size: 20px;
-            }
-        }
-        
-        /* Calendar View */
-        #event-calendar {
-            min-height: 500px;
-        }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: #2c5234;
-            border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: #1e3a24;
-        }
-    </style>
+
 </head>
 
 <body>
     <!-- Navbar Start -->
-    <div class="container-fluid bg-light position-relative shadow">
-        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-            <a href="index.html" class="navbar-brand font-weight-bold" style="font-size: 50px;" style="font-size: 50px;">
-                <i class="flaticon-043-teddy-bear text-gold"></i>
-                <span class="text-white">Turkana Prep</span>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav font-weight-bold mx-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="class.html" class="nav-item nav-link">Classes</a>
-                    <a href="team.html" class="nav-item nav-link">Teachers</a>
-                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <a href="events.html" class="nav-item nav-link active">Events</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog Detail</a>
-                        </div>
+    <div class="container-fluid p-0 bg-dark-green">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3">
+            <div class="container px-4 px-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.jpeg" alt="Turkana Preparatory School Logo" class="img-fluid" style="max-height: 50px; margin-right: 10px;">
+                    <span class="text-white d-none d-md-block" style="font-size: 1.8rem; font-weight: 700;">Turkana Preparatory School</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="class.html">Classes</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white active" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn btn-light text-dark-green px-4 font-weight-bold hover-bg-cream transition-300">Join Class</a>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="contact.html" class="btn btn-primary px-4">Join Class</a>
             </div>
         </nav>
     </div>
