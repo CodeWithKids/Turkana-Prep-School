@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>KidKinder - Kindergarten Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Turkana Preparatory School offers a nurturing and creative learning environment for young children. Discover our unique approach to early childhood education." name="description">
-    <meta content="Turkana Preparatory School,Lodwar Coding, kindergarten in Turkana, preschool, early education, child care, Lodwar, coding School, international school in turkana,STEM,Kids coding in Turkana,Turkana, preparatory school" name="keywords">
+    <meta content="Turkana Preparatory School, Lodwar Coding, kindergarten in Turkana, preschool, early education, child care, Lodwar, coding School, international school in turkana, STEM, Kids coding in Turkana, Turkana, preparatory school" name="keywords">
+
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,15 +30,18 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Theme Colors -->
+    <link href="css/theme-colors.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar Start -->
     <div class="container-fluid bg-light position-relative shadow">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-            <a href="" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
-                <i class="flaticon-043-teddy-bear"></i>
-                <span class="text-primary">KidKinder</span>
+            <a href="index.html" class="navbar-brand font-weight-bold" style="font-size: 50px;" style="font-size: 50px;">
+                <i class="flaticon-043-teddy-bear text-gold"></i>
+                <span class="text-white">Turkana Prep</span>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -45,18 +51,11 @@
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="class.html" class="nav-item nav-link active">Classes</a>
-                    <a href="team.html" class="nav-item nav-link">Teachers</a>
                     <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="single.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
+                    <a href="events.html" class="nav-item nav-link">Events</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary px-4">Join Class</a>
+                <a href="contact.html" class="btn btn-primary px-4">Join School</a>
             </div>
         </nav>
     </div>
@@ -68,7 +67,7 @@
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
             <h3 class="display-3 font-weight-bold text-white">Our Classes</h3>
             <div class="d-inline-flex text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
+                <p class="m-0"><a class="text-white" href="index.html">Home</a></p>
                 <p class="m-0 px-2">/</p>
                 <p class="m-0">Our Classes</p>
             </div>
@@ -80,93 +79,256 @@
     <!-- Class Start -->
     <div class="container-fluid pt-5">
         <div class="container">
-            <div class="text-center pb-2">
-                <p class="section-title px-5"><span class="px-2">Popular Classes</span></p>
-                <h1 class="mb-4">Classes for Your Kids</h1>
+            <div class="text-center pb-4">
+                <p class="section-title px-5"><span class="px-2">Our Programs</span></p>
+                <h1 class="mb-4">Academic Journey at Turkana Prep</h1>
+                <p class="mb-5">Discover our comprehensive educational programs designed to nurture young minds from early childhood through primary education.</p>
             </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-1.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Drawing Class</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
+            
+            <!-- Early Years Section -->
+            <div class="mb-5">
+                <h3 class="mb-4 text-primary"><i class="fas fa-baby mr-2"></i>Early Years Foundation Stage</h3>
+                <div class="row">
+                    <!-- Playgroup -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-primary py-3">
+                                <h4 class="mb-0 text-center">Playgroup</h4>
+                                <p class="text-center mb-0">Age: 2 - 3 years</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Our Playgroup program focuses on sensory play, early socialization, and basic cognitive development through fun, interactive activities.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Structured play activities</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Language development</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Motor skills enhancement</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Social interaction</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-primary btn-gold">Enroll Now</a>
+                            </div>
                         </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
+                    </div>
+                    
+                    <!-- Pre-Primary 1 (PP1) -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-success py-3">
+                                <h4 class="mb-0 text-center">Pre-Primary 1 (PP1)</h4>
+                                <p class="text-center mb-0">Age: 3 - 4 years</p>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
+                            <div class="card-body">
+                                <p class="card-text">PP1 introduces structured learning with a focus on literacy, numeracy, and creative expression in a nurturing environment.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Phonics & pre-reading</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Basic numeracy</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Creative arts</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Physical development</li>
+                                </ul>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-success">Enroll Now</a>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                    </div>
+                    
+                    <!-- Pre-Primary 2 (PP2) -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-info py-3">
+                                <h4 class="mb-0 text-center">Pre-Primary 2 (PP2)</h4>
+                                <p class="text-center mb-0">Age: 4 - 5 years</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">PP2 prepares children for primary school with advanced literacy, numeracy, and critical thinking skills development.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Reading & writing</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Basic mathematics</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Environmental studies</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Problem-solving</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-info text-white">Enroll Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-2.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Language Learning</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
+            </div>
+            
+            <!-- Lower Primary Section -->
+            <div class="mb-5">
+                <h3 class="mb-4 text-primary"><i class="fas fa-graduation-cap mr-2"></i>Lower Primary (Grade 1-3)</h3>
+                <div class="row">
+                    <!-- Grade 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-warning py-3">
+                                <h4 class="mb-0 text-center">Grade 1</h4>
+                                <p class="text-center mb-0">Age: 5 - 6 years</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Building strong foundations in core subjects while fostering curiosity and a love for learning.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Literacy & language</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Mathematics</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Environmental activities</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Creative arts</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-warning text-white">Enroll Now</a>
+                            </div>
                         </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
+                    </div>
+                    
+                    <!-- Grade 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-danger py-3">
+                                <h4 class="mb-0 text-center">Grade 2</h4>
+                                <p class="text-center mb-0">Age: 6 - 7 years</p>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
+                            <div class="card-body">
+                                <p class="card-text">Enhancing academic skills while encouraging independent thinking and problem-solving abilities.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Reading comprehension</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Mathematical operations</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Science exploration</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Social studies</li>
+                                </ul>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-danger">Enroll Now</a>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                    </div>
+                    
+                    <!-- Grade 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-purple py-3">
+                                <h4 class="mb-0 text-center">Grade 3</h4>
+                                <p class="text-center mb-0">Age: 7 - 8 years</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Developing advanced academic skills and preparing for the transition to upper primary education.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Advanced literacy</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Mathematical concepts</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Science experiments</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Research skills</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-primary btn-gold">Enroll Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="card border-0 bg-light shadow-sm pb-2">
-                        <img class="card-img-top mb-2" src="img/class-3.jpg" alt="">
-                        <div class="card-body text-center">
-                            <h4 class="card-title">Basic Science</h4>
-                            <p class="card-text">Justo ea diam stet diam ipsum no sit, ipsum vero et et diam ipsum duo et no et, ipsum ipsum erat duo amet clita duo</p>
+            </div>
+            
+            <!-- Upper Primary Section -->
+            <div class="mb-5">
+                <h3 class="mb-4 text-primary"><i class="fas fa-book-reader mr-2"></i>Upper Primary (Grade 4-6)</h3>
+                <div class="row">
+                    <!-- Grade 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-indigo py-3">
+                                <h4 class="mb-0 text-center">Grade 4</h4>
+                                <p class="text-center mb-0">Age: 8 - 9 years</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Challenging students with more complex concepts while encouraging analytical thinking.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Advanced mathematics</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Composition writing</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Science & technology</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Social sciences</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-indigo text-white">Enroll Now</a>
+                            </div>
                         </div>
-                        <div class="card-footer bg-transparent py-4 px-5">
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Age of Kids</strong></div>
-                                <div class="col-6 py-1">3 - 6 Years</div>
+                    </div>
+                    
+                    <!-- Grade 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-teal py-3">
+                                <h4 class="mb-0 text-center">Grade 5</h4>
+                                <p class="text-center mb-0">Age: 9 - 10 years</p>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Total Seats</strong></div>
-                                <div class="col-6 py-1">40 Seats</div>
+                            <div class="card-body">
+                                <p class="card-text">Preparing students for the challenges of upper primary with advanced curriculum and projects.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Critical thinking</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Research projects</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Advanced sciences</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Creative writing</li>
+                                </ul>
                             </div>
-                            <div class="row border-bottom">
-                                <div class="col-6 py-1 text-right border-right"><strong>Class Time</strong></div>
-                                <div class="col-6 py-1">08:00 - 10:00</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-6 py-1 text-right border-right"><strong>Tution Fee</strong></div>
-                                <div class="col-6 py-1">$290 / Month</div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-teal text-white">Enroll Now</a>
                             </div>
                         </div>
-                        <a href="" class="btn btn-primary px-4 mx-auto mb-4">Join Now</a>
+                    </div>
+                    
+                    <!-- Grade 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-light-cyan py-3">
+                                <h4 class="mb-0 text-center">Grade 6</h4>
+                                <p class="text-center mb-0">Age: 10 - 11 years</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Final year of primary education, preparing students for the transition to secondary school.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Exam preparation</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Advanced mathematics</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Science & technology</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i>Leadership skills</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0 text-center">
+                                <a href="#registration" class="btn btn-cyan text-white">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- School Hours & Additional Info -->
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-light">
+                            <h4 class="mb-0"><i class="fas fa-clock text-primary mr-2"></i>School Hours</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="d-flex justify-content-between py-2 border-bottom"><span>Monday - Friday</span> <strong>7:30 AM - 3:30 PM</strong></li>
+                                <li class="d-flex justify-content-between py-2"><span>Extra-Curricular Activities</span> <strong>3:30 PM - 5:00 PM</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-header bg-light">
+                            <h4 class="mb-0"><i class="fas fa-info-circle text-primary mr-2"></i>Additional Information</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Small class sizes (max 25 students)</li>
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Qualified and experienced teachers</li>
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> Modern learning facilities</li>
+                                <li class="mb-2"><i class="fas fa-check text-success mr-2"></i> After-school care available</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -190,7 +352,7 @@
                         <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Etsea et sit dolor amet ipsum</li>
                         <li class="py-2"><i class="fa fa-check text-success mr-3"></i>Diam dolor diam elitripsum vero.</li>
                     </ul>
-                    <a href="" class="btn btn-primary mt-4 py-2 px-4">Book Now</a>
+                    <a href="contact.html" class="btn btn-primary mt-4 py-2 px-4">Book Now</a>
                 </div>
                 <div class="col-lg-5">
                     <div class="card border-0">
@@ -206,12 +368,24 @@
                                     <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Select A Class</option>
-                                        <option value="1">Class 1</option>
-                                        <option value="2">Class 1</option>
-                                        <option value="3">Class 1</option>
-                                    </select>
+                                    <select class="custom-select border-0 px-4" style="height: 47px;" required>
+                                    <option value="" disabled selected>Select A Class</option>
+                                    <optgroup label="Early Years">
+                                        <option value="Playgroup">Playgroup (2-3 years)</option>
+                                        <option value="PP1">Pre-Primary 1 - PP1 (3-4 years)</option>
+                                        <option value="PP2">Pre-Primary 2 - PP2 (4-5 years)</option>
+                                    </optgroup>
+                                    <optgroup label="Lower Primary">
+                                        <option value="Grade 1">Grade 1 (5-6 years)</option>
+                                        <option value="Grade 2">Grade 2 (6-7 years)</option>
+                                        <option value="Grade 3">Grade 3 (7-8 years)</option>
+                                    </optgroup>
+                                    <optgroup label="Upper Primary">
+                                        <option value="Grade 4">Grade 4 (8-9 years)</option>
+                                        <option value="Grade 5">Grade 5 (9-10 years)</option>
+                                        <option value="Grade 6">Grade 6 (10-11 years)</option>
+                                    </optgroup>
+                                </select>
                                 </div>
                                 <div>
                                     <button class="btn btn-secondary btn-block border-0 py-3" type="submit">Book Now</button>
@@ -227,90 +401,63 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
-                    <i class="flaticon-043-teddy-bear"></i>
-                    <span class="text-white">KidKinder</span>
-                </a>
-                <p>Labore dolor amet ipsum ea, erat sit ipsum duo eos. Volup amet ea dolor et magna dolor, elitr rebum duo est sed diam elitr. Stet elitr stet diam duo eos rebum ipsum diam ipsum elitr.</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
-                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+    <footer class="bg-dark bg-teal text-white pt-4 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- School Info -->
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <h6 class="text-uppercase mb-3">
+                        <i class="fas fa-graduation-cap text-primary mr-2"></i>
+                        <span style="font-size: 1.1rem;">Turkana Preparatory School</span>
+                    </h6>
+                    <p class="small text-muted mb-3">Providing quality education in a nurturing environment that fosters academic excellence and personal growth.</p>
+                    <div class="d-flex">
+                        <a class="btn btn-sm btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h6 class="text-uppercase text-primary mb-3" style="font-size: 0.85rem;">Contact Us</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2 d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-2" style="min-width: 16px;"></i>
+                            <span class="small text-muted">123 Education St, Nairobi, Kenya</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <i class="fas fa-phone-alt text-primary mr-2" style="min-width: 16px;"></i>
+                            <a href="tel:+254700000000" class="text-white text-decoration-none small">+254 700 000 000</a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary mr-2" style="min-width: 16px;"></i>
+                            <a href="mailto:info@turkana-prep.ac.ke" class="text-white text-decoration-none small">info@turkana-prep.ac.ke</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- School Hours -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="text-uppercase text-primary mb-3" style="font-size: 0.85rem;">School Hours</h6>
+                    <ul class="list-unstyled small text-muted mb-0">
+                        <li class="mb-1">Monday - Friday: 7:30 AM - 4:00 PM</li>
+                        <li>Saturday - Sunday: Closed</li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Get In Touch</h3>
-                <div class="d-flex">
-                    <h4 class="fa fa-map-marker-alt text-primary"></h4>
-                    <div class="pl-3">
-                        <h5 class="text-white">Address</h5>
-                        <p>123 Street, New York, USA</p>
+            
+            <!-- Copyright -->
+            <div class="border-top border-secondary pt-3 mt-3">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="small mb-0 text-muted">&copy; <span id="current-year">2025</span> Turkana Preparatory School. All rights reserved. | Designed by <a href="https://renice.codewithkids.africa/" target="_blank" class="text-primary text-decoration-none">Renice Owino</a></p>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <h4 class="fa fa-envelope text-primary"></h4>
-                    <div class="pl-3">
-                        <h5 class="text-white">Email</h5>
-                        <p>info@example.com</p>
-                    </div>
-                </div>
-                <div class="d-flex">
-                    <h4 class="fa fa-phone-alt text-primary"></h4>
-                    <div class="pl-3">
-                        <h5 class="text-white">Phone</h5>
-                        <p>+012 345 67890</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Quick Links</h3>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Teachers</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h3 class="text-primary mb-4">Newsletter</h3>
-                <form action="">
-                    <div class="form-group">
-                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
-                            required="required" />
-                    </div>
-                    <div>
-                        <button class="btn btn-primary btn-block border-0 py-3" type="submit">Submit Now</button>
-                    </div>
-                </form>
             </div>
         </div>
-        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
-            <p class="m-0 text-center text-white">
-                &copy; <a class="text-primary font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. 
-				
-				<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-				Designed by <a class="text-primary font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
-        </div>
-    </div>
+    </footer>
     <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
@@ -327,6 +474,164 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <script src="js/back-to-top.js"></script>
+
+    
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <style>
+        /* Custom Colors */
+        .bg-light-primary { background-color: rgba(46, 86, 77, 0.1) !important; }
+        .bg-light-success { background-color: rgba(242, 184, 22, 0.1) !important; }
+        .bg-light-info { background-color: rgba(251, 251, 212, 0.3) !important; }
+        .bg-light-warning { background-color: #fff8e1 !important; }
+        .bg-light-danger { background-color: #ffebee !important; }
+        .bg-light-purple { background-color: #f3e5f5 !important; }
+        .bg-light-indigo { background-color: #e8eaf6 !important; }
+        .bg-light-teal { background-color: #e0f2f1 !important; }
+        .bg-light-cyan { background-color: #e0f7fa !important; }
+        
+        /* Button Styles */
+        .btn-indigo {
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+        }
+        .btn-teal {
+            background-color: #009688;
+            color: white;
+            border: none;
+        }
+        .btn-cyan {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+        }
+        
+        /* Card Styles */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: none;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+        }
+        
+        .card-header {
+            border-bottom: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.1rem;
+        }
+        
+        /* Section Title */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            color: var(--primary);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .section-title span {
+            position: relative;
+            z-index: 1;
+            background: #fff;
+            padding: 0 15px;
+        }
+        .section-title:before {
+            position: absolute;
+            content: "";
+            height: 2px;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            background: var(--secondary);
+            z-index: 0;
+        }
+        
+        /* List Styles */
+        .list-unstyled i {
+            color: #17a2b8;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 1.5rem;
+            }
+            .card-header {
+                padding: 0.75rem 1rem;
+                font-size: 1rem;
+            }
+            .card-body {
+                padding: 1rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Form Styles */
+        .form-control, .custom-select {
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+            padding: 12px 15px;
+            font-size: 0.9rem;
+        }
+        
+        .form-control:focus, .custom-select:focus {
+            border-color: #17a2b8;
+            box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+        }
+        
+        /* Button Hover Effects */
+        .btn {
+            transition: all 0.3s ease;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Enroll Now Buttons */
+        .card .btn {
+            min-width: 120px;
+            padding: 8px 20px;
+        }
+    </style>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <script src="js/back-to-top.js"></script>
 </body>
 
 </html>

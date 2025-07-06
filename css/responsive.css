@@ -1,0 +1,241 @@
+/* Responsive Styles for Turkana Preparatory School */
+
+/* General Responsive Adjustments */
+@media (max-width: 1199.98px) {
+    /* Large devices (desktops, less than 1200px) */
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-section .display-5 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* Navbar */
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section .col-lg-6 {
+        padding: 4rem 0;
+    }
+    
+    .hero-image {
+        min-height: 400px;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    /* About Section */
+    .about-section img {
+        margin-bottom: 2rem;
+    }
+    
+    .about-feature {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Registration Section */
+    .registration-section {
+        text-align: center;
+    }
+    
+    .registration-section .d-flex {
+        text-align: left;
+    }
+    
+    .registration-section .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .card {
+        margin-top: 2rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+    
+    /* Hero Section */
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-stats > div {
+        margin: 0.5rem 0;
+    }
+    
+    /* Buttons */
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Sections */
+    section {
+        padding: 3rem 0;
+    }
+    
+    .py-7 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .py-lg-8 {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+    
+    /* Testimonials */
+    .testimonial-item {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer-newsletter {
+        margin-top: 2rem;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Typography */
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    /* Hero Section */
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-section .btn {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    /* Form Elements */
+    .form-control, .form-select {
+        font-size: 16px; /* Prevents zoom on focus in mobile */
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+    
+    /* Padding and Margins */
+    .px-4 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    
+    /* Badges */
+    .badge {
+        font-size: 0.7rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+
+/* Very Small Devices */
+@media (max-width: 375px) {
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .hero-section .col-lg-6 {
+        padding: 2rem 0;
+    }
+    
+    .hero-image {
+        min-height: 300px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        padding: 0.5in;
+        font-size: 12pt;
+        color: #000;
+    }
+    
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}

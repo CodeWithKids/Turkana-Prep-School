@@ -1,19 +1,72 @@
   # Turkana Preparatory School Website
 
-This project is the official website for Turkana Preparatory School, customized from the KidKinder template.
+Official website for Turkana Preparatory School, established in 2024, providing a modern and informative online presence for students, parents, and staff.
 
-## Setup
+## Design & Features
 
-1.  **Add the Logo:** Place the school's logo file, named `logo.png`, into the `img/` folder.
-2.  **View the Website:** Open any of the `.html` files (e.g., `index.html`) in a web browser to see the site.
+- **Modern, Responsive Design**: Looks great on all devices
+- **Clean Typography**: Montserrat font for all text with optimized readability
+- **Color Scheme**:
+  - Primary: Dark Green `#2c5234`
+  - Secondary: Cream `#f5f5dc`
+  - Accent: Gold `#f2b816`
+- **Key Pages**:
+  - Home
+  - About Us
+  - Classes
+  - Teachers
+  - Gallery
+  - Events
+  - Contact
+
+## Setup & Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone [repository-url]
+   cd kindergarten-website-template-2
+   ```
+
+2. **Add Media Assets**
+   - Place the school logo as `logo.png` in the `img/` folder
+   - Add additional images to the `img/` folder as needed
+
+3. **Run the Website**
+   - Open any `.html` file in a web browser to view the site
+   - For local development, use a local server (e.g., Live Server in VS Code)
 
 ## Customization
 
--   **Branding:** The school name and logo are set in the navigation bar of each `.html` file.
--   **Colors:** The theme colors (dark green `#2c5234` and light cream `#f5f5dc`) are defined in a `<style>` tag in the `<head>` of each HTML file. You can change them there.
--   **Content:** All text and images can be replaced by editing the HTML files and replacing files in the `img/` folder.
+### Update Content
+- Edit the HTML files directly to update text content
+- Replace images in the `img/` folder (keep original filenames)
+
+### Update Styling
+- Main styles are in `css/style.css`
+- Theme colors and custom styles are in `css/theme-colors.css`
+- Fonts are loaded from Google Fonts (Montserrat)
+
+### Scripts
+- `update_theme.py`: Updates theme across all pages
+- `add_back_to_top.py`: Adds back-to-top button functionality
+- `update_fonts.py`: Updates font settings across the site
+
+## Recent Updates
+
+### July 2024
+- Updated typography to use Montserrat throughout
+- Improved color scheme and contrast
+- Added responsive design improvements
+- Updated about page with accurate founding information (2024)
+- Enhanced navigation and user experience
+
+## Contact
+
+For support or questions, please contact the school administration.
 
 ## Credits
 
--   **Original Template:** KidKinder by HTML Codex (https://htmlcodex.com)
--   **Customization:** Renice Owino
+- **Original Template**: KidKinder by HTML Codex (https://htmlcodex.com)
+- **Customization & Development**: Renice Owino
+- **Icons**: Font Awesome (https://fontawesome.com)
+- **Fonts**: Google Fonts - Montserrat

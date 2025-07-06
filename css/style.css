@@ -32,7 +32,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Nunito", sans-serif;
+  --font-family-heading: 'Montserrat', sans-serif;
+  --font-family-body: 'Montserrat', sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -45,7 +46,9 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+  -webkit-print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -55,13 +58,53 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--font-family-body);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #666666;
+  line-height: 1.7;
+  color: #333;
   text-align: left;
   background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  line-height: 1.3;
+  color: #00394f;
+  margin-bottom: 0.5rem;
+}
+
+h1, .h1 { font-size: 2.5rem; }
+h2, .h2 { font-size: 2rem; }
+h3, .h3 { font-size: 1.75rem; }
+h4, .h4 { font-size: 1.5rem; }
+h5, .h5 { font-size: 1.25rem; }
+h6, .h6 { font-size: 1rem; }
+
+/* Navigation */
+.navbar-nav {
+  font-family: var(--font-family-heading);
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-family-heading);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+/* Form Elements */
+.form-control {
+  font-family: var(--font-family-body);
+  line-height: 1.5;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -81,7 +124,12 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444;
+  letter-spacing: 0.01em;
 }
 
 abbr[title],
@@ -230,6 +278,9 @@ button {
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input,
@@ -331,6 +382,8 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 [type="search"]::-webkit-search-decoration {
@@ -3562,7 +3615,8 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -9857,6 +9911,304 @@ a.text-dark:hover, a.text-dark:focus {
 
 .testimonial-carousel .owl-dot.active {
   background: #17a2b8;
+}
+
+.testimonial-carousel .help-block ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Hero Carousel */
+.hero-carousel {
+  position: relative;
+  z-index: 1;
+  background: #000;
+}
+
+.hero-slide {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(44, 82, 52, 0.3);
+    z-index: 1;
+}
+
+.hero-slide .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-slide h1, 
+.hero-slide h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-slide p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-cream {
+    color: var(--secondary) !important;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    padding: 0.75rem 2rem;
+}
+
+.btn-primary {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--dark);
+}
+
+.btn-primary:hover {
+    background-color: #c19a2d;
+    border-color: #c19a2d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-light {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.carousel-nav-prev,
+.carousel-nav-next {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 50%;
+    color: var(--white) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-nav-prev {
+    left: 30px;
+}
+
+.carousel-nav-next {
+    right: 30px;
+}
+
+.carousel-nav-prev:hover,
+.carousel-nav-next:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+    transform: scale(1.1);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: var(--white);
+    text-align: center;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.scroll-down i {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.25rem;
+}
+
+.scroll-down:hover {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-5px) translateX(-50%);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .hero-slide h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-slide p {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-nav-prev,
+    .carousel-nav-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-nav-prev {
+        left: 15px;
+    }
+    
+    .carousel-nav-next {
+        right: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-section,
+    .hero-slide {
+        height: 80vh;
+        min-height: 500px;
+    }
+    
+    .hero-slide h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-slide p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        margin: 0.25rem 0;
+    }
+    
+    .scroll-down {
+        bottom: 20px;
+    }
+}
+
+/* Carousel Dots */
+.hero-carousel .owl-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 5;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero-carousel .owl-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5) !important;
+  transition: all 0.3s;
+}
+
+.hero-carousel .owl-dot.active {
+  background: #17a2b8 !important;
+  transform: scale(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .hero-slide {
+    min-height: 80vh;
+    padding: 80px 0;
+  }
+  
+  .hero-slide h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-slide {
+    min-height: 70vh;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .hero-slide h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-carousel .owl-nav {
+    display: none;
+  }
 }
 
 .contact-form .help-block ul {

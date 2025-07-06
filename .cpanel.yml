@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=//home6/turkanap/repositories/Turkana-Prep-School	
+    - export DEPLOYPATH=/home6/turkanap/public_html 
+
     - /bin/cp -R * $DEPLOYPATH
