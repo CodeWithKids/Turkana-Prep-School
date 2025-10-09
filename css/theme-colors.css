@@ -1,22 +1,23 @@
 /* Theme Colors */
 :root {
   /* Color Scheme */
-  --primary: #2e564d;      /* Dark Teal */
-  --secondary: #f2b816;    /* Gold */
-  --light: #fbfbd4;        /* Cream */
-  --dark: #2e564d;         /* Dark Teal */
+  --primary: #2c5234;      /* Dark Green */
+  --secondary: #f5f5dc;    /* Light Cream */
+  --accent: #f2b816;       /* Gold */
+  --light: #f8f9fa;        /* Light Gray */
+  --dark: #2c5234;         /* Dark Green */
   --white: #ffffff;        /* White */
   
   /* Bootstrap Color Overrides */
-  --blue: #2e564d;
-  --indigo: #2e4d56;
-  --purple: #4d2e56;
-  --pink: #562e4d;
+  --blue: #2c5234;
+  --indigo: #2c4d52;
+  --purple: #4d2c52;
+  --pink: #522c4d;
   --red: #dc3545;
   --orange: #ffc107;
   --yellow: #f2b816;
   --green: #28a745;
-  --teal: #2e5656;
+  --teal: #2c5252;
   --cyan: #17a2b8;
   --gray: #6c757d;
   --gray-dark: #343a40;
@@ -26,13 +27,13 @@
   --danger: #dc3545;
   
   /* Theme Specific Colors */
-  --header-bg: #2e564d;
-  --footer-bg: #2e564d;
+  --header-bg: #2c5234;
+  --footer-bg: #2c5234;
   --text-on-dark: #ffffff;
-  --text-on-light: #2e564d;
-  --accent-light: #fbfbd4;
+  --text-on-light: #2c5234;
+  --accent-light: #f5f5dc;
   --accent-gold: #f2b816;
-  --hover-primary: #1e453d;
+  --hover-primary: #1e3a24;
   --hover-secondary: #e0aa00;
 }
 
@@ -178,7 +179,7 @@ li {
 .registration-section {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--primary) 0%, #1e3c31 100%);
+    background: var(--primary);
 }
 
 .registration-section .badge {
@@ -426,7 +427,7 @@ li {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(90deg, rgba(46, 86, 77, 0.9) 0%, rgba(46, 86, 77, 0.7) 50%, rgba(46, 86, 77, 0.4) 100%);
+    background: rgba(46, 86, 77, 0.9);
 }
 
 .hero-section h1 {

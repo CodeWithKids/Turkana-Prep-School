@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Our Staff - Turkana Preparatory School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Meet our dedicated and qualified teaching staff at Turkana Preparatory School. Experienced educators committed to your child's success.">
+    <meta name="keywords" content="Turkana Preparatory School, teaching staff, qualified teachers, educators, faculty, school staff">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Staff - Turkana Preparatory School">
+    <meta property="og:description" content="Meet our dedicated and qualified teaching staff committed to providing quality education.">
+    <meta property="og:image" content="https://turkana-prep.ac.ke/img/logo.jpeg">
+    <meta property="og:url" content="https://turkana-prep.ac.ke/staff.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://turkana-prep.ac.ke/staff.html">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    
+    <style>
+        .staff-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .staff-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+        }
+        
+        .staff-image {
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .staff-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(44, 82, 52, 0.9);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+        
+        .staff-card:hover .staff-overlay {
+            opacity: 1;
+        }
+        
+        .staff-social {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .staff-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .staff-social a:hover {
+            background: #f2b816;
+            transform: translateY(-3px);
+            color: white;
+        }
+        
+        .staff-info {
+            padding: 1.5rem;
+        }
+        
+        .staff-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #2c5234;
+            margin-bottom: 0.5rem;
+        }
+        
+        .staff-position {
+            color: #f2b816;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .staff-qualifications {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        
+        .staff-bio {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #495057;
+        }
+        
+        .department-header {
+            background: #2c5234;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 3rem;
+        }
+        
+        .department-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .department-description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 bg-dark-green">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-sm py-3">
+            <div class="container px-4 px-lg-5">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <img src="img/logo.jpeg" alt="Turkana Preparatory School Logo" class="img-fluid" style="max-height: 50px; margin-right: 10px;">
+                    <span class="text-white d-none d-md-block" style="font-size: 1.8rem; font-weight: 700;">Turkana Preparatory School</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="class.html">Classes</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white active" href="staff.html">Staff</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-white-75 hover-text-white transition-300" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="contact.html" class="btn btn-light text-dark-green px-4 font-weight-bold hover-bg-cream transition-300">Join Class</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header -->
+    <div class="container-fluid mb-4" style="background: #f2b816;">
+        <div class="d-flex flex-column align-items-center justify-content-center py-4">
+            <h3 class="h2 font-weight-bold text-dark mb-2">Meet Our Staff</h3>
+            <div class="d-inline-flex text-dark">
+                <p class="m-0"><a class="text-dark" href="index.html">Home</a></p>
+                <p class="m-0 px-2">/</p>
+                <p class="m-0">Staff</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Teaching Staff Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Teaching Staff</h2>
+            <p class="lead text-muted">Our qualified and experienced teachers are passionate about education</p>
+        </div>
+        
+        <div class="row">
+            <!-- Principal -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="staff-card card">
+                    <div class="position-relative">
+                        <img src="img/user.jpg" alt="Principal" class="staff-image">
+                        <div class="staff-overlay">
+                            <div class="staff-social">
+                                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h4 class="staff-name">Dr. Sarah Mwangi</h4>
+                        <div class="staff-position">Principal</div>
+                        <div class="staff-qualifications">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            Ph.D. in Education, M.Ed. in School Leadership
+                        </div>
+                        <p class="staff-bio">
+                            With over 15 years in education, Dr. Mwangi leads our school with passion and dedication, ensuring every child receives quality education.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Deputy Principal -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="staff-card card">
+                    <div class="position-relative">
+                        <img src="img/user.jpg" alt="Deputy Principal" class="staff-image">
+                        <div class="staff-overlay">
+                            <div class="staff-social">
+                                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h4 class="staff-name">Mr. James Ochieng</h4>
+                        <div class="staff-position">Deputy Principal</div>
+                        <div class="staff-qualifications">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            M.Ed. in Educational Administration, B.Ed. in Mathematics
+                        </div>
+                        <p class="staff-bio">
+                            An experienced educator specializing in mathematics and school administration, committed to academic excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Early Years Coordinator -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="staff-card card">
+                    <div class="position-relative">
+                        <img src="img/user.jpg" alt="Early Years Coordinator" class="staff-image">
+                        <div class="staff-overlay">
+                            <div class="staff-social">
+                                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h4 class="staff-name">Ms. Grace Wanjiku</h4>
+                        <div class="staff-position">Early Years Coordinator</div>
+                        <div class="staff-qualifications">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            B.Ed. in Early Childhood Education, Montessori Certified
+                        </div>
+                        <p class="staff-bio">
+                            Specializes in early childhood development with a passion for creating nurturing learning environments for young children.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- STEM Coordinator -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="staff-card card">
+                    <div class="position-relative">
+                        <img src="img/user.jpg" alt="STEM Coordinator" class="staff-image">
+                        <div class="staff-overlay">
+                            <div class="staff-social">
+                                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h4 class="staff-name">Mr. Michael Otieno</h4>
+                        <div class="staff-position">STEM Coordinator</div>
+                        <div class="staff-qualifications">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            M.Sc. in Computer Science, B.Ed. in Science Education
+                        </div>
+                        <p class="staff-bio">
+                            A technology enthusiast who brings innovation to our STEM programs, preparing students for the digital future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Primary School Teacher -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="staff-card card">
+                    <div class="position-relative">
+                        <img src="img/user.jpg" alt="Primary School Teacher" class="staff-image">
+                        <div class="staff-overlay">
+                            <div class="staff-social">
+                                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h4 class="staff-name">Ms. Mary Akinyi</h4>
+                        <div class="staff-position">Primary School Teacher</div>
+                        <div class="staff-qualifications">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            B.Ed. in Primary Education, TSC Certified
+                        </div>
+                        <p class="staff-bio">
+                            Dedicated to creating engaging learning experiences and fostering a love for learning in primary school students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Art & Music Teacher -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="staff-card card">
+                    <div class="position-relative">
+                        <img src="img/user.jpg" alt="Art & Music Teacher" class="staff-image">
+                        <div class="staff-overlay">
+                            <div class="staff-social">
+                                <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-info">
+                        <h4 class="staff-name">Ms. Elizabeth Njoroge</h4>
+                        <div class="staff-position">Art & Music Teacher</div>
+                        <div class="staff-qualifications">
+                            <i class="fas fa-graduation-cap mr-2"></i>
+                            B.A. in Fine Arts, Music Education Certificate
+                        </div>
+                        <p class="staff-bio">
+                            Inspires creativity and artistic expression through music and visual arts, nurturing the creative talents of our students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Support Staff Section -->
+    <div class="container-fluid py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Support Staff</h2>
+                <p class="lead text-muted">Our dedicated support team ensures smooth operations</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-user-shield fa-2x"></i>
+                        </div>
+                        <h5>Security Team</h5>
+                        <p class="text-muted">Ensuring a safe and secure environment for all students and staff.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-utensils fa-2x"></i>
+                        </div>
+                        <h5>Kitchen Staff</h5>
+                        <p class="text-muted">Preparing nutritious and delicious meals for our students.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-broom fa-2x"></i>
+                        </div>
+                        <h5>Maintenance Team</h5>
+                        <p class="text-muted">Keeping our facilities clean, safe, and well-maintained.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="fas fa-clipboard-list fa-2x"></i>
+                        </div>
+                        <h5>Administrative Staff</h5>
+                        <p class="text-muted">Managing school operations and supporting parents and students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="bg-dark bg-teal text-white pt-4 pb-3">
+        <div class="container">
+            <!-- Social Media Icons -->
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-sm btn-outline-light btn-social mr-2" href="https://www.linkedin.com/company/turkana-preparatory-school" target="_blank" rel="noopener noreferrer" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-social mr-2" href="https://www.instagram.com/turkana_prep_school" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-social" href="https://www.facebook.com/turkana.preparatory.school" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-top border-secondary pt-3 mt-3">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="small mb-0 text-muted">&copy; <span id="current-year">2025</span> Turkana Preparatory School. All rights reserved. | Designed by <a href="https://codewithkids.africa/" target="_blank" class="text-primary text-decoration-none">Code With Kids</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <script src="js/back-to-top.js"></script>
+</body>
+</html>
